@@ -1,0 +1,14 @@
+{
+  "name": "endoh-zephyr-mf",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "install": "pnpm --filter \"mf-*\" i",
+    "build": "pnpm --filter \"mf-*\" build",
+    "start": "pnpm --filter \"mf-*\" start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4"
+}

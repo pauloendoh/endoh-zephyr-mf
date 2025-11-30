@@ -1,0 +1,4 @@
+# This file tells pnpm where to find the projects in our workspace
+packages:
+  - "apps/*"
+  - "packages/**/*"
