@@ -3,8 +3,7 @@ import { rspack } from "@rspack/core";
 import * as RefreshPlugin from "@rspack/plugin-react-refresh";
 import * as path from "node:path";
 import { withZephyr } from "zephyr-rspack-plugin";
-
-import { mfConfig } from "./module-federation.config";
+import { mfConfig } from "./mfConfig";
 
 const isDev = process.env.NODE_ENV === "development";
 

@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "pnpm --filter \"mf-*\" build",
-    "start": "pnpm --filter \"mf-*\" start",
-    "uninstall": "pnpm --filter \"mf-*\" uninstall"
+    "i": "pnpm -r i",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "uninstall": "pnpm -r uninstall"
   },
   "keywords": [],
   "author": "",

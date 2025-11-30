@@ -16,7 +16,7 @@
       "*": ["./@mf-types/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "../shared/src/mantine.d.ts"],
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS"
