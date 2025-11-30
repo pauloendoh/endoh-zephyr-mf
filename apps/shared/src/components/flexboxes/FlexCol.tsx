@@ -3,7 +3,7 @@ import { EmotionSx } from "@mantine/emotion";
 import React from "react";
 
 type Props = FlexProps & {
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 export const FlexCol = (props: Props) => {

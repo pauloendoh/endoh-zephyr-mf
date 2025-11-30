@@ -1,11 +1,9 @@
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import { emotionTransform, MantineEmotionProvider } from "@mantine/emotion";
-import { Counter } from "mf-remote/Counter";
-import { HomePage } from "mf-remote/HomePage";
+import { myEmotionCache } from "@shared/myEmotionCache";
+import { myTheme } from "@shared/myTheme";
 import ReactDOM from "react-dom/client";
-import { myEmotionCache } from "../../shared/src/myEmotionCache";
-import { myTheme } from "../../shared/src/myTheme";
 import "./index.css";
 import { MyAppShell } from "./MyAppShell/MyAppShell";
 
@@ -18,9 +16,6 @@ const App = () => (
         <MyAppShell />
       </MantineProvider>
     </MantineEmotionProvider>
-
-    <Counter />
-    <HomePage />
   </MantineProvider>
 );
 

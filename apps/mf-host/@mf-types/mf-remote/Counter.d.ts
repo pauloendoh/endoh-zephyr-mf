@@ -1,2 +1,2 @@
-export * from './compiled-types/components/Counter';
-export { default } from './compiled-types/components/Counter';
+export * from './compiled-types/mf-remote/src/components/Counter';
+export { default } from './compiled-types/mf-remote/src/components/Counter';

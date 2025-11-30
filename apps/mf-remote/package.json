@@ -33,7 +33,9 @@
     "npm": "^11.6.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.67.0",
     "react-icons": "^5.5.0",
-    "zephyr-rspack-plugin": "^0.0.50"
+    "zephyr-rspack-plugin": "^0.0.50",
+    "zustand": "^5.0.9"
   }
 }

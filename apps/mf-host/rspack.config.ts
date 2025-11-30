@@ -17,6 +17,9 @@ export default withZephyr()({
   },
   resolve: {
     extensions: ["...", ".ts", ".tsx", ".jsx"],
+    alias: {
+      "@shared": path.resolve(__dirname, "../shared/src"),
+    },
   },
 
   devServer: {

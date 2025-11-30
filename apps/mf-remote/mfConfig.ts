@@ -6,7 +6,7 @@ export const mfConfig = {
   filename: "remoteEntry.js",
   exposes: {
     "./Counter": "./src/components/Counter",
-    "./HomePage": "./src/pages/HomePage/HomePage",
+    "./TodoPage": "./src/pages/TodoPage/TodoPage",
   },
   shared: {
     ...sharedMfConfig.shared,
