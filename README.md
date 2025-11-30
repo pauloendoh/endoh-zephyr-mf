@@ -2,6 +2,11 @@
 
 Micro-frontend TO-DO app for Zephyr technical task. The TO-DO items are saved in local storage.
 
+## Preview
+
+https://paulo-endoh-v04v6xgtul-442-mf-host-endoh-zephyr-m-fa8376ea5-ze.zephyrcloud.app/
+![preview](./preview.gif)
+
 ## Run the project
 
 1. Install dependencies:
