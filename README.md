@@ -1,6 +1,6 @@
 # endoh-zephyr-mf
 
-Micro-frontend TO-DO app for Zephyr technical task.
+Micro-frontend TO-DO app for Zephyr technical task. The TO-DO items are saved in local storage.
 
 ## Run the project
 
