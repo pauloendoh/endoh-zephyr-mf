@@ -1,8 +1,7 @@
-import * as path from "node:path";
-import { defineConfig } from "@rspack/cli";
+import { ModuleFederationPlugin } from "@module-federation/enhanced/rspack";
 import { rspack } from "@rspack/core";
 import * as RefreshPlugin from "@rspack/plugin-react-refresh";
-import { ModuleFederationPlugin } from "@module-federation/enhanced/rspack";
+import * as path from "node:path";
 import { withZephyr } from "zephyr-rspack-plugin";
 
 import { mfConfig } from "./module-federation.config";
@@ -28,7 +27,7 @@ export default withZephyr()({
   },
   output: {
     // You need to set a unique value that is not equal to other applications
-    uniqueName: "endoh_zephyr_mfe",
+    uniqueName: "mf_host",
     // publicPath must be configured if using manifest
     publicPath: "http://localhost:8080/",
   },
@@ -45,8 +44,12 @@ export default withZephyr()({
       },
       {
         test: /\.css$/,
-        use: ["postcss-loader"],
-        type: "css",
+        use: [
+          rspack.CssExtractRspackPlugin.loader,
+          "css-loader",
+          "postcss-loader", // Ensure postcss-loader is used for Tailwind
+        ],
+        type: "javascript/auto",
       },
       {
         test: /\.(jsx?|tsx?)$/,
@@ -80,6 +83,9 @@ export default withZephyr()({
     }),
     new ModuleFederationPlugin(mfConfig),
     isDev ? new RefreshPlugin() : null,
+    new rspack.CssExtractRspackPlugin({
+      filename: "[name].[contenthash].css",
+    }),
   ].filter(Boolean),
   optimization: {
     minimizer: [

@@ -6,5 +6,16 @@ export const mfConfig = {
   exposes: {
     "./Counter": "./src/components/Counter",
   },
-  shared: ["react", "react-dom"],
+  shared: [
+    {
+      react: { singleton: true, eager: true, requiredVersion: false },
+      "react-dom": { singleton: true, eager: true, requiredVersion: false },
+      tailwindcss: { singleton: true, eager: true, requiredVersion: false },
+      "postcss-loader": {
+        singleton: true,
+        eager: true,
+        requiredVersion: false,
+      },
+    },
+  ],
 } satisfies ModuleFederationPluginOptions;

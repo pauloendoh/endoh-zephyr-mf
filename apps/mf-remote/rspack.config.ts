@@ -40,9 +40,13 @@ export default withZephyr()({
         type: "asset",
       },
       {
-        test: /\.css$/,
-        use: ["postcss-loader"],
-        type: "css",
+        test: /\.css$/i,
+        use: [
+          rspack.CssExtractRspackPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+        ],
+        type: "javascript/auto",
       },
       {
         test: /\.(jsx?|tsx?)$/,
@@ -76,6 +80,9 @@ export default withZephyr()({
     }),
     new ModuleFederationPlugin(mfConfig),
     isDev ? new RefreshPlugin() : null,
+    new rspack.CssExtractRspackPlugin({
+      filename: "[name].[contenthash].css",
+    }),
   ].filter(Boolean),
   optimization: {
     minimizer: [

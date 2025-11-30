@@ -8,7 +8,7 @@ export const Counter = ({ ...props }: Props) => {
   return (
     <button
       onClick={() => setvalue(value + 1)}
-      className={`Counter bg-teal-500 cursor-pointer text-white p-2 rounded`}
+      className={`Counter bg-red-500 cursor-pointer text-white p-2 rounded`}
     >
       Counter = {value}
     </button>

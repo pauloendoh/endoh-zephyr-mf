@@ -5,7 +5,7 @@ import "./index.css";
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
     <Counter />
-    <div>Name: mf-host</div>
+    <div className="bg-teal-500">Name: mf-host</div>
     <div>Framework: react-19</div>
   </div>
 );
