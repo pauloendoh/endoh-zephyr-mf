@@ -1,11 +1,10 @@
 import ReactDOM from "react-dom/client";
 
-import { Counter } from "./components/Counter";
-import "./index.css";
+import { TodoPage } from "./pages/TodoPage/TodoPage";
 
 const App = () => (
   <div>
-    <Counter />
+    <TodoPage />
   </div>
 );
 

@@ -6,7 +6,7 @@ export type TodoItemType = {
 
 export function buildTodoItem(p?: Partial<TodoItemType>): TodoItemType {
   return {
-    id: crypto.randomUUID(),
+    id: "",
     title: "",
     completedAt: null,
     ...p,

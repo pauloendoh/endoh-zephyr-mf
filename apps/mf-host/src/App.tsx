@@ -1,5 +1,4 @@
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
-import "@mantine/core/styles.css";
 import { emotionTransform, MantineEmotionProvider } from "@mantine/emotion";
 import { myEmotionCache } from "@shared/myEmotionCache";
 import { myTheme } from "@shared/myTheme";
