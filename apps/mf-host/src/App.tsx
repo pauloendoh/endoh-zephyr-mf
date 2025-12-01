@@ -9,7 +9,7 @@ import { MyAppShell } from "./MyAppShell/MyAppShell";
 const App = () => (
   <MantineProvider theme={myTheme}>
     <MantineEmotionProvider cache={myEmotionCache}>
-      <ColorSchemeScript defaultColorScheme="auto" />
+      <ColorSchemeScript defaultColorScheme="dark" />
 
       <MantineProvider stylesTransform={emotionTransform} theme={myTheme}>
         <MyAppShell />
