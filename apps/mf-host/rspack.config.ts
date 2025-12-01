@@ -30,8 +30,6 @@ export default withZephyr()({
   output: {
     // You need to set a unique value that is not equal to other applications
     uniqueName: "mf_host",
-    // publicPath must be configured if using manifest
-    publicPath: "http://localhost:8080/",
   },
 
   experiments: {
